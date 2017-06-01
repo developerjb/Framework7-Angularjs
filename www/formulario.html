@@ -1,0 +1,198 @@
+<div class="page cached" data-page="formulario" ng-controller="formulario" ng-cloak>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="list.html" class="back link">back</a>
+            </div>
+            <div class="center">forms</div>
+            <div class="right">
+                <a href="#" class="link" ng-click="dataModel()">click</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page-content">
+        <form id="my-form2" class="list-block store-data" style="margin: 0px;">
+            <ul>
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">Name</div>
+                            <div class="item-input">
+                                <input type="text" name="name" ng-model="model.name">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">password</div>
+                            <div class="item-input">
+                                <input type="password" name="password" ng-model="model.password">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">email</div>
+                            <div class="item-input">
+                                <input type="email" name="email" ng-model="model.email">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">tel</div>
+                            <div class="item-input">
+                                <input type="tel" name="tel" ng-model="model.tel">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">url</div>
+                            <div class="item-input">
+                                <input type="url" name="url" ng-model="model.url">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">date</div>
+                            <div class="item-input">
+                                <input type="date" name="date" ng-model="model.date">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">number</div>
+                            <div class="item-input">
+                                <input type="number" name="number" ng-model="model.number">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">Gender</div>
+                            <div class="item-input">
+                                <select name="select" ng-model="model.gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="item-content">
+                        <!--<div class="item-media">... icon here ...</div>-->
+                        <div class="item-inner">
+                            <div class="item-title label">Switch</div>
+                            <div class="item-input">
+                                <label class="label-switch">
+                                <input type="checkbox" name="switch" ng-model="model.checkbox" f7-cheched>
+                                <div class="checkbox"></div>
+                                </label>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="#" class="item-link smart-select" data-back-on-select="true" data-page-title="Awesome Fruits">
+                        <!-- select -->
+                        <select name="fruitss">
+                            <option value="apple" selected>Apple</option>
+                            <option value="pineapple">Pineapple</option>
+                        </select>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <!-- Select label -->
+                                <div class="item-title">Fruit</div>
+                                <!-- Selected value, not required -->
+                                <div class="item-after">Apple</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="item-link smart-select" 
+                        data-open-in="picker" 
+                        data-picker-close-text="Cerrar"
+                        data-page-title="Awesome Fruits"
+                        data-searchbar="true"
+                        data-searchbar-placeholder="Search fruits"
+                        data-back-on-select="true">
+                        <!-- select -->
+                        <select name="fruitss">
+                            <option value="apple" selected>Apple</option>
+                            <option value="a" selected>a</option>
+                            <option value="c" selected>c</option>
+                            <option value="v" selected>v</option>
+                            
+                        </select>
+                        <div class="item-content">
+                            <div class="item-inner">
+                                <div class="item-title">Fruit</div>
+                                <div class="item-after">Apple</div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+
+ <li>
+            <!-- data-virtual-list="true" attribute to enable virtual list  -->
+            <a href="#" class="item-link smart-select" data-virtual-list="true">
+                <select name="numbers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="100000">100000</option>
+                </select>
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title">Numbers</div>
+                    </div>
+                </div>
+            </a>
+        </li>
+
+            </ul>
+        </form>
+    </div>
+</div>

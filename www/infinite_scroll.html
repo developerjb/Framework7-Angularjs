@@ -1,0 +1,45 @@
+<div class="page cached" data-page="infinitescroll" ng-controller="infinitescroll" ng-cloak>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a href="list.html" class="back link">back</a>
+            </div>
+            <div class="center">scroll infinite</div>
+            <div class="right">
+                <a href="#" class="link" ng-click="cambiar()">modal</a>
+            </div>
+        </div>
+    </div>
+    <f7-search-bar></f7-search-bar>
+    <f7-search-bar-overlay></f7-search-bar-overlay>
+    <div class="page-content infinite-scroll pull-to-refresh-content">
+        <div class="pull-to-refresh-layer">
+            <div class="preloader"></div>
+            <div class="pull-to-refresh-arrow"></div>
+        </div>
+        <div class="content-block searchbar-not-found">No hay elementos.</div>
+        <f7-infinite-scroll-v2></f7-infinite-scroll-v2>
+        <div class="infinite-scroll-preloader">
+            <div class="preloader"></div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--<div class="content-block searchbar-not-found">No hay elementos.</div>
+<div class="list-block list-block-search searchbar-found">
+    <ul>
+        <li ng-repeat="item in data | limitTo:20" class="item-content" ng-click="aaa()">
+            <div class="item-inner">
+                <div class="item-title">{{item.name}}</div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<li ng-click="aaa()" class="item-content">
+    <div class="item-inner">
+        <div class="item-title">' + data[i].name + '</div>
+    </div>
+</li>-->
